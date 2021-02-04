@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 export default function ErrorPage() {
 	return (
@@ -10,3 +11,17 @@ export default function ErrorPage() {
 	);
 }
 
+export const query = graphql`
+	query {
+		logo: sanityLogo {
+			image {
+				asset {
+					fixed(width: 150) {
+						...GatsbySanityImageFixed
+					}
+				}
+			}
+			alt
+		}
+	}
+`

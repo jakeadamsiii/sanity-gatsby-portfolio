@@ -36,7 +36,7 @@ const ProjectStyles = styled.div`
             position: absolute;
             bottom: 0;
             background: white;
-            transform: translateY(-50%);
+            transform: translateY(-1rem);
         }
     }
 `;

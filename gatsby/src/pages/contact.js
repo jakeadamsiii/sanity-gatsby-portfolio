@@ -20,5 +20,15 @@ export const query = graphql`
 			email
 			id
 		}
+		logo: sanityLogo {
+			image {
+				asset {
+					fixed(width: 150) {
+						...GatsbySanityImageFixed
+					}
+				}
+			}
+			alt
+		}
 	}
 `

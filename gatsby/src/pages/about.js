@@ -30,6 +30,15 @@ export const query = graphql`
 			}
 			alt
 		}
-		
+		logo: sanityLogo {
+			image {
+				asset {
+					fixed(width: 150) {
+						...GatsbySanityImageFixed
+					}
+				}
+			}
+			alt
+		}
 	}
 `
